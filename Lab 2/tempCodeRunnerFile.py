@@ -1,0 +1,7 @@
+corr_matrix = df.corr(numeric_only=True)
+print(corr_matrix)
+corr_matrix["median_house_value"].sort_values(ascending=False)
+plt.scatter(df["median_income"], df["median_house_value"], alpha=0.2)
+plt.xlabel("Median Income")
+plt.ylabel("Median House Value")
+plt.show()
